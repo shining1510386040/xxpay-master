@@ -3,6 +3,13 @@ package org.xxpay.dal.dao.model;
 import java.io.Serializable;
 import java.util.Date;
 
+/**
+ * Description 支付渠道表
+ *
+ * @author wenyi cao
+ * @version 1.0.0
+ * @date 2019-12-3
+ */
 public class PayChannel implements Serializable {
     /**
      * 渠道主键ID
@@ -189,15 +196,15 @@ public class PayChannel implements Serializable {
         }
         PayChannel other = (PayChannel) that;
         return (this.getId() == null ? other.getId() == null : this.getId().equals(other.getId()))
-            && (this.getChannelId() == null ? other.getChannelId() == null : this.getChannelId().equals(other.getChannelId()))
-            && (this.getChannelName() == null ? other.getChannelName() == null : this.getChannelName().equals(other.getChannelName()))
-            && (this.getChannelMchId() == null ? other.getChannelMchId() == null : this.getChannelMchId().equals(other.getChannelMchId()))
-            && (this.getMchId() == null ? other.getMchId() == null : this.getMchId().equals(other.getMchId()))
-            && (this.getState() == null ? other.getState() == null : this.getState().equals(other.getState()))
-            && (this.getParam() == null ? other.getParam() == null : this.getParam().equals(other.getParam()))
-            && (this.getRemark() == null ? other.getRemark() == null : this.getRemark().equals(other.getRemark()))
-            && (this.getCreateTime() == null ? other.getCreateTime() == null : this.getCreateTime().equals(other.getCreateTime()))
-            && (this.getUpdateTime() == null ? other.getUpdateTime() == null : this.getUpdateTime().equals(other.getUpdateTime()));
+                && (this.getChannelId() == null ? other.getChannelId() == null : this.getChannelId().equals(other.getChannelId()))
+                && (this.getChannelName() == null ? other.getChannelName() == null : this.getChannelName().equals(other.getChannelName()))
+                && (this.getChannelMchId() == null ? other.getChannelMchId() == null : this.getChannelMchId().equals(other.getChannelMchId()))
+                && (this.getMchId() == null ? other.getMchId() == null : this.getMchId().equals(other.getMchId()))
+                && (this.getState() == null ? other.getState() == null : this.getState().equals(other.getState()))
+                && (this.getParam() == null ? other.getParam() == null : this.getParam().equals(other.getParam()))
+                && (this.getRemark() == null ? other.getRemark() == null : this.getRemark().equals(other.getRemark()))
+                && (this.getCreateTime() == null ? other.getCreateTime() == null : this.getCreateTime().equals(other.getCreateTime()))
+                && (this.getUpdateTime() == null ? other.getUpdateTime() == null : this.getUpdateTime().equals(other.getUpdateTime()));
     }
 
     @Override
